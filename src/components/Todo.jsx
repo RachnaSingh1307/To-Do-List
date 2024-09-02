@@ -13,7 +13,7 @@ const Todo = () => {
   const add = () => {
     const inputText = inputRef.current.value.trim();
 
-    if (inputText === " ") {
+    if (!inputText) {
       return null;
     }
 
